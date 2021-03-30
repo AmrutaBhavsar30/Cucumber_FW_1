@@ -27,12 +27,15 @@ public class StepDefs {
         driver.get("http://automationpractice.com/");
     }
 	
-	@Given("User login to base url")
-	@Deprecated
-	public void user_login_to_base_url() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
+	
+	  @Given("User login to base url")
+	  
+	  @Deprecated 
+	  public void user_login_to_base_url()
+	  { 
+		  
+	   }
+	 
 
 
 	@Given("check the title of home page")
