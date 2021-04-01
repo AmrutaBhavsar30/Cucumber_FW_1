@@ -10,13 +10,14 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features="classpath:features",
         glue="com.visionit.automation.stepdefs",
-        tags="", 
+        tags="@tag2", 
         plugin = {"pretty", 
             "html:target/html/htmlreport.html",
             "json:target/json/file.json",
             },
         publish=true,
-        dryRun=false 
+        monochrome=true,
+        dryRun=true 
         )
 public class TestRunner {
 

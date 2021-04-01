@@ -1,5 +1,6 @@
-@ui @healthcheck
+@ui @healthcheck 
 @tag
+
 Feature: URL redirection check
   
   
@@ -10,7 +11,11 @@ Feature: URL redirection check
     Then check user successfully navigate to LandingPage url
     
   
-
+@tag2
+  Scenario: User is able to Open the browser, navigate to the URL and Search for Product
+  And User Search for product "mobile"
+  When User click On Any Product 
+  Then Add to cart Result Page is Displayed
   
   
     
